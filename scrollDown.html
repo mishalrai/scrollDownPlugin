@@ -1,0 +1,20 @@
+<!---
+|===============================================================
+| 
+|	data-target              => where to scroll
+|	data-animation-duration  => scroll animation duration
+|	data-reduce-offset       => reduce offset animation ( value, class, id or any css selector )
+|
+-->
+
+<!-- without data-reduce-offset -->
+<div class="down-arrow" id="fs-down-arrow" data-target="#daily-lunch-menu" data-reduce-offset=".fixed-header" data-animation-duration="1500">
+</div>
+
+<!-- data-reduce-offset with value -->
+<div class="down-arrow" id="fs-down-arrow" data-target="#daily-lunch-menu" data-reduce-offset="100" data-animation-duration="1500">
+</div>
+
+<!-- data-reduce-offset with selctor ( it is auto calculate given selector height and reduce ) -->
+<div class="down-arrow" id="fs-down-arrow" data-target="#daily-lunch-menu" data-reduce-offset=".fixed-header" data-animation-duration="1500">
+</div>
