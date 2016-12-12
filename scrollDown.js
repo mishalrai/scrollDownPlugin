@@ -4,7 +4,7 @@ jQuery.fn.scrollDown = function () {
     this.click(function () {
         
         var $this                   = jQuery( this ),
-            $element                = jQuery( 'body' ),
+            $element                = jQuery( 'body' ),  //don't select html to scroll it's won't work
             target                  = $this.attr( 'data-target' ),
             reduceHeightAttr        = $this.attr( 'data-reduce-offset' ),
             animationDuration       = $this.attr( 'data-animation-duration' ),
