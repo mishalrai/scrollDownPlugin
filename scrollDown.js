@@ -1,8 +1,8 @@
 
 //scroll down plugin
 jQuery.fn.scrollDown = function () {
-    this.click(function () {
-        
+    this.click(function ( e ) {
+        e.preventDefault();
         var $this                   = jQuery( this ),
             $element                = jQuery( 'body' ),  //don't select html to scroll it's won't work
             target                  = $this.attr( 'data-target' ),
